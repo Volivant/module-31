@@ -1,0 +1,69 @@
+#app-login-btn {
+  width: 160px;
+}
+
+.svg--off {
+  display: none;
+}
+
+.container-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1440px;
+}
+
+.column {
+  width: 282px;
+}
+
+.card-element {
+  margin-bottom: 10px;
+  padding: 5px;
+  /*text-align: center;*/
+  border: 1px dashed;
+  border-radius: 0.25rem;
+  cursor: move;
+  background-color: rgba(0,0,0,.03);
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: rgb(50, 50, 50);
+  color: white;
+}
+
+.dropdown .option {
+  position: absolute;
+  top: 70px;
+  right: 1px;
+  width: 100px;
+  padding: 4px;
+  border-radius: 5px;
+  /* background: rgb(50, 50, 50); */
+  background-color: rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.125);
+  box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: none;/*прячем пункты меню*/
+  text-transform: capitalize;
+  cursor: pointer;
+
+}
+
+.dropdown.active .option {
+  z-index: 1;
+  display: block;
+}
+
+.dropdown .option div:hover {
+  background: #212529;/*окрашивает синим цветом*/
+  color: #fff;/*меняет цвет текста*/
+}
+
+.footer-task {
+  padding-left: 2px;
+  padding-right: 2px;
+}
